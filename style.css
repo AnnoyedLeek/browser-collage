@@ -1,18 +1,11 @@
-img
-{
-    position: absolute;
-    padding: 0px;
-}
+body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial, sans-serif;}
 
-.toolbar
-{
-    position: fixed;
-    height: 100px;
-    width: 100%;
-    text-align: center;
-}
+img {position: absolute; padding: 0px; max-width: 100%; max-height: 100%;}
 
-body
-{
-    font-family: Helvetica, Arial, sans-serif;
-}
+.btn {display: inline-block; text-align: center; white-space: nowrap; cursor: pointer;}
+
+.ui-draggable, .ui-droppable {background-position: top;}
+
+#wrapper {width: 750px; height:750px; border:2px solid #ccc; background-color: goldenrod; padding: 10px;}
+
+.draggable {width: 100px; height: 100px;}
