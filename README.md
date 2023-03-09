@@ -3,7 +3,7 @@ Drag stuff around using the "draggable" function of jQuery. I want the final pro
 
 Functionality to add:
 - [x] Basic multi-image drag functionality.
-- [ ] Implement HTML2Canvas & (?? filesaver) to provide screenshot and save functionality.
+- [ ] Implement HTML2Canvas & FileSaver to provide screenshot and save functionality.
 - [ ] Add a selection system and create visual feedback that indicates which draggable item is selected.
 - [ ] Create a function to change a selected image's z-index by one (up or down).
 - [ ] Add some sort of delete option; this will either be selection-based or a "drag out of window and disappear" method.
@@ -13,3 +13,4 @@ Sources:
 - [jQuery Docs](https://jqueryui.com/)
 - [HTML2Canvas Docs](https://html2canvas.hertzen.com/)
 - [HTML2Canvas Releases](https://github.com/niklasvh/html2canvas)
+- [FileSaver.js Demo](https://eligrey.com/demos/FileSaver.js/)
