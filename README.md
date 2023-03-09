@@ -10,8 +10,8 @@ Functionality to add:
 - [ ] Make an image bank (with mini previews to save bandwidth and space) that will drag and snap to full width/height.
 
 Sources:
-[jQuery "Draggable" Docs](https://jqueryui.com/draggable/)
-[Canvas2Image Releases](https://github.com/hongru/canvas2image)
-Note: This is the most recent version I could find of Canvas2Image. Not sure if there is anything newer somewhere not on Github.
-[HTML2Canvas Docs](https://html2canvas.hertzen.com/)
-[HTML2Canvas Releases](https://github.com/niklasvh/html2canvas)
+- [jQuery "Draggable" Docs](https://jqueryui.com/draggable/)
+- [Canvas2Image Releases](https://github.com/hongru/canvas2image)
+*Note: This is the most recent version I could find of Canvas2Image. Not sure if there is anything newer somewhere not on Github.*
+- [HTML2Canvas Docs](https://html2canvas.hertzen.com/)
+- [HTML2Canvas Releases](https://github.com/niklasvh/html2canvas)
