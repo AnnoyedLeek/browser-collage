@@ -1,24 +1,39 @@
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>collage maker</title>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/style.css">
-    <style>
-    #draggable { width: 150px; height: 150px; padding: 0.5em; }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script>
-    $( function() {
-      $( "#draggable" ).draggable();
-    } );
-    </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>collage maker</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+  <!-- script for draggable objects -->
+  <script>
+  $( function() {
+    $( '.draggable' ).draggable({ containment: '#wrapper', scroll: false });    } ); 
+  </script>
+  <!-- script for screenshotting button -->
+  <script>
+    document.querySelector('button').addEventListener('click', function() {
+    html2canvas(document.querySelector("#capture")).then(canvas => {
+    document.body.appendChild(canvas)
+    });
+    });
+  </script>
   </head>
 
 <body>
-    <div id="myDiagramDiv" draggable="true" style="width:80vh; height:80vh; background-color: darkgoldenrod;"></div>
-    <div id="draggable">
-        <p>Drag me around</p>
-      </div>
+  <h1 style="text-align:center;">simple browser collage</h1>
+  <div id="wrapper" class="screenshot" style="margin: auto;">
+    <div class="draggable ui-draggable">
+      <img src="https://avatars.githubusercontent.com/u/104864031?v=4" style="width: 100px; height: 100px; padding: 0;">
+    </div>
+    <div class="draggable ui-draggable">
+      <img src="https://avatars.githubusercontent.com/u/104864031?v=4" style="width: 200px; height: 200px;">
+    </div>
+  </div>
+  <div style="width: 750px; margin: auto;">
+    <p>Click the button below to download a screenshot of your collage!</p>
+    <button type="button" class="btn">SCREENSHOT ME</button>
+  </div>
 </body>
